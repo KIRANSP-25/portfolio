@@ -1,0 +1,130 @@
+body,
+html {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.row.content {
+  height: 100vh;
+}
+
+.sidenav {
+  background-color: #222;
+  height: 100vh;
+  position: relative;
+  left: 0;
+}
+
+.sidenav h3,
+.sidenav a {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sidenav a {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.sidenav a:active,
+.sidenav a:focus {
+  color: teal;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+}
+
+#content {
+  width: 84%;
+  position: absolute;
+  left: 16%;
+  top: 0%;
+  height: 100vh;
+  background: url("https://cdn.hipwallpaper.com/i/60/1/1ygmSV.jpg") no-repeat;
+  background-position: center right;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-size: cover;
+}
+
+#content::before {
+  background: rgba(58, 135, 223, 0.445);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  text-transform: capitalize;
+  font-weight: 800;
+  font-size: 8rem;
+}
+.hero h3,
+.hero h1 {
+  color: #fff;
+  font-family: "Poppins", serif;
+  color: #fff;
+}
+
+.hero .social-link a {
+  font-size: 24px;
+  color: #fff;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+/* home ends */
+
+.html {
+  width: 80%;
+}
+.css {
+  width: 85%;
+}
+
+.js,
+.react {
+  width: 75%;
+}
+
+.node,
+.angular,
+.rest {
+  width: 65%;
+}
+
+.thumbnail {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 567px) and (max-width: 1080px) {
+  #content {
+    position: absolute;
+    left: 0%;
+    top: 10% !important;
+    width: 100%;
+  }
+}
